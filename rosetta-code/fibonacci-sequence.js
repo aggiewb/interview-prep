@@ -12,19 +12,20 @@ Hence, the series is: 0, 1, 1, 2, 3, 5, 8, 13...
 */ 
 
 function fibonacci(n) {
-    let current = 0;
-    let next = 1;
-    
-    if(n === 0){
-      return current;
-    }else if(n === 1){
-      return next;
-    }
+  let current = 0;
+  let next = 1;
   
-    for(let i = 0; i < n; i++){
-      const temp = current + next;
-      current = next;
-      next = temp;
-    }
+  if(n === 0){
     return current;
+  }else if(n === 1){
+    return next;
+  }
+
+  const iCount = n - 2;
+  for(let i = 0; i <= iCount; i++){
+    const temp = current + next;
+    current = next;
+    next = temp;
+  }
+  return next;
 }
