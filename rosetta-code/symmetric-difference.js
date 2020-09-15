@@ -8,7 +8,6 @@ This set is called the symmetric difference of A and B. In other words: (AâˆªB)â
 
 Write a function that takes two arrays as parameters and returns the symmetric difference. 
 Sort the resultant array before returning it.
-
 */ 
 
 function symmetricDifference(A, B) {
