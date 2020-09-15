@@ -18,10 +18,10 @@ function symmetricDifference(A, B) {
   
 function diffHelper(main, compare){
     const arrDiff = main.reduce((symDiff, item) => {
-    if(compare.indexOf(item) === -1){
-        symDiff.push(item);
-    }
-      return symDiff;
+        if(compare.indexOf(item) === -1){
+            symDiff.push(item);
+        }
+        return symDiff;
     },[]);
     return arrDiff;
 }
