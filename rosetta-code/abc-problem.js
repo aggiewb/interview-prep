@@ -29,8 +29,8 @@ A complete alphabet is guaranteed amongst all sides of the blocks. The sample co
 Implement a function that takes a string (word) and determines whether the word can be spelled with the given collection of blocks.
 
 Some rules to keep in mind:
-    - Once a letter on a block is used, that block cannot be used again.
-    - The function should be case-insensitive.
+- Once a letter on a block is used, that block cannot be used again.
+- The function should be case-insensitive.
 */ 
 
 function canMakeWord(word) {
@@ -39,7 +39,7 @@ function canMakeWord(word) {
       H: 1, I: 1, J: 1, K: 1, L: 1, M: 1, N: 2,
       O: 2, P: 2, Q: 2, R: 2, S: 2, T: 2, U: 1, 
       V: 1, W: 1, X: 1, Y: 1, Z: 1
-    }
+    };
   
     word = word.toUpperCase();
     const wordArr = Array.from(word);
