@@ -45,25 +45,25 @@ function canMakeWord(word) {
     const wordArr = Array.from(word);
     let hasMadeWord = true;
     for(let i = 0; i < wordArr.length; i++){
-      const letter = wordArr[i];
-      const letterAscii = letter.charCodeAt(0);
-      const letterCount = blocks[letter] - 1;
-      if(letterCount < 0){
-        hasMadeWord = false;
-        break;
-      }
-      blocks[letter] = letterCount;
-  
-      let letterPartner = '';
-      const middleUppercaseAlphabetAsciiCode = 77;
-      const halfOfAlphabet = 13;
-      if(letter.charCodeAt(0) <= middleUppercaseAlphabetAsciiCode){
-        letterPartner = String.fromCharCode(letterAscii + halfOfAlphabet);
-      }
-      if(letter.charCodeAt(0) > middleUppercaseAlphabetAsciiCode){
-        letterPartner = String.fromCharCode(letterAscii - halfOfAlphabet);
-      }
-      blocks[letterPartner] = blocks[letterPartner] - 1;
+        const letter = wordArr[i];
+        const letterAscii = letter.charCodeAt(0);
+        const letterCount = blocks[letter] - 1;
+        if(letterCount < 0){
+            hasMadeWord = false;
+            break;
+        }
+        blocks[letter] = letterCount;
+
+        let letterPartner = '';
+        const middleUppercaseAlphabetAsciiCode = 77;
+        const halfOfAlphabet = 13;
+        if(letter.charCodeAt(0) <= middleUppercaseAlphabetAsciiCode){
+            letterPartner = String.fromCharCode(letterAscii + halfOfAlphabet);
+        }
+        if(letter.charCodeAt(0) > middleUppercaseAlphabetAsciiCode){
+            letterPartner = String.fromCharCode(letterAscii - halfOfAlphabet);
+        }
+        blocks[letterPartner] = blocks[letterPartner] - 1;
     }
     return hasMadeWord;
 }
