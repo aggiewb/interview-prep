@@ -1,7 +1,6 @@
 /*
 https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-selection-sort
 
-
 Here we will implement selection sort. 
 Selection sort works by selecting the minimum value in a list and swapping it with the first value in the list. 
 It then starts at the second position, selects the smallest value in the remaining list, and swaps it with the second element. 
