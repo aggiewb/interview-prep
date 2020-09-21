@@ -8,7 +8,8 @@ It then starts at the second position, selects the smallest value in the remaini
 It continues iterating through the list and swapping elements until it reaches the end of the list. 
 Now the list is sorted. Selection sort has quadratic time complexity in all cases (O(N^2)).
 
-Instructions: Write a function selectionSort which takes an array of integers as input and returns an array of these integers in sorted order from least to greatest.
+Instructions: Write a function selectionSort which takes an array of integers as input and 
+returns an array of these integers in sorted order from least to greatest.
 */
 
 function selectionSort(array) {
