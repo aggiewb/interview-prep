@@ -52,9 +52,6 @@ function PriorityQueue(){
       return this.collection.length;
     };
     this.isEmpty = function(){
-      if(!this.size()){
-        return true;
-      }
-      return false;
+      return this.size() === 0;
     };
 }
