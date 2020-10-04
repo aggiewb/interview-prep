@@ -19,8 +19,8 @@ Output the result as an array in the following format [deficient, perfect, abund
 */
 
 function getDPA(num) {
-    const classes = [0, 0, 0];
-    for(let j = 1; j <= num; j++){
+    const classes = [1, 0, 0];
+    for(let j = 2; j <= num; j++){
       let sum = 0;
       for(let i = 1; i < j; i++){
         if(j % i === 0){
@@ -29,9 +29,9 @@ function getDPA(num) {
       }
       if(sum < j){
         classes[0]++;
-      }else if(sum === j){
+      } else if(sum === j){
         classes[1]++;
-      }else if(sum > j){
+      } else {
         classes[2]++;
       }
     }
