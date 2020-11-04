@@ -42,29 +42,31 @@ Note: The length of the list should decrease by one every time an element is rem
 
 https://www.freecodecamp.org/learn/coding-interview-prep/data-structures/search-within-a-linked-list
 
-We should also be able to find specific elements in our linked list. Traversing through data structures is something you'll want to get a lot of practice 
-with! Let's create an indexOf method that takes an element as an argument, and returns that element's index in the linked list. If the element is not 
-found in the linked list, return -1.
+We should also be able to find specific elements in our linked list. Traversing through data structures is something you'll want to get a lot of 
+practice with! Let's create an indexOf method that takes an element as an argument, and returns that element's index in the linked list. If the 
+element is not found in the linked list, return -1.
 
-Let's also implement a method that does the opposite: an elementAt method that takes an index as an argument and returns the element at the given index. 
-If no element is found, return undefined.
+Let's also implement a method that does the opposite: an elementAt method that takes an index as an argument and returns the element at the given 
+index. If no element is found, return undefined.
 
-Write an isEmpty method that checks if the linked list is empty, an indexOf method that returns the index of a given element, and an elementAt that returns 
-an element at a given index. 
+Write an isEmpty method that checks if the linked list is empty, an indexOf method that returns the index of a given element, and an elementAt 
+that returns an element at a given index. 
 
 https://www.freecodecamp.org/learn/coding-interview-prep/data-structures/remove-elements-from-a-linked-list-by-index
 
-Let's write a removeAt method that removes the element at a given index. The method should be called removeAt(index). To remove an element at a certain index, 
-we'll need to keep a running count of each node as we move along the linked list.
+Let's write a removeAt method that removes the element at a given index. The method should be called removeAt(index). To remove an element at a 
+certain index, we'll need to keep a running count of each node as we move along the linked list.
 
-A common technique used to iterate through the elements of a linked list involves a 'runner', or sentinel, that 'points' at the nodes that your code is comparing. 
-In our case, starting at the head of our list, we start with a currentIndex variable that starts at 0. The currentIndex should increment by one for each node we pass.
+A common technique used to iterate through the elements of a linked list involves a 'runner', or sentinel, that 'points' at the nodes that your 
+code is comparing. In our case, starting at the head of our list, we start with a currentIndex variable that starts at 0. The currentIndex should 
+increment by one for each node we pass.
 
-Just like our remove(element) method, which we covered in a previous lesson, we need to be careful not to orphan the rest of our list when we remove the node in our 
-removeAt(index) method. We keep our nodes contiguous by making sure that the node that has reference to the removed node has a reference to the next node.
+Just like our remove(element) method, which we covered in a previous lesson, we need to be careful not to orphan the rest of our list when we 
+remove the node in our removeAt(index) method. We keep our nodes contiguous by making sure that the node that has reference to the removed node has 
+a reference to the next node.
 
-Write a removeAt(index) method that removes and returns a node at a given index. The method should return null if the given index is either negative, or greater than 
-or equal to the length of the linked list.
+Write a removeAt(index) method that removes and returns a node at a given index. The method should return null if the given index is either negative, 
+or greater than or equal to the length of the linked list.
 
 Note: Remember to keep count of the currentIndex.
 */
