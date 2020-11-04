@@ -29,7 +29,7 @@ let called = 0;
 const hash = string => {
   called++;
   let hashed = 0;
-  for (let i = 0; i < string.length; i++) {
+  for(let i = 0; i < string.length; i++){
     hashed += string.charCodeAt(i);
   }
   return hashed;
@@ -39,24 +39,27 @@ const HashTable = function() {
   this.collection = {};
   this.add = (key, value) => {
     const hashKey = hash(key);
-    if (!this.collection.hasOwnProperty(hashKey)) {
+    //conditional to account for collisions
+    if(!this.collection.hasOwnProperty(hashKey)){
       this.collection[hashKey] = {};
     }
     this.collection[hashKey][key] = value;
   }
 
-  this.remove = (key) => {
+  this.remove = key => {
     const hashedKey = hash(key);
     const hashedObj = this.collection[hashedKey];
+    //remove hashed key object
     if(hashedObj.hasOwnProperty(key)){
       delete hashedObj[key];
     }
-    if(Object.keys(hashedObj).length === 0) {
+    //remove object from hash table
+    if(Object.keys(hashedObj).length === 0){
       delete this.collection[hashedKey];
     }
   }
 
-  this.lookup = (key) => {
+  this.lookup = key => {
     const hashedObj = this.collection[hash(key)];
     if(hashedObj.hasOwnProperty(key)){
       return hashedObj[key];
