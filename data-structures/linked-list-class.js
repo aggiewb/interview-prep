@@ -69,6 +69,18 @@ Write a removeAt(index) method that removes and returns a node at a given index.
 or greater than or equal to the length of the linked list.
 
 Note: Remember to keep count of the currentIndex.
+
+
+https://www.freecodecamp.org/learn/coding-interview-prep/data-structures/add-elements-at-a-specific-index-in-a-linked-list
+
+Let's create a addAt(index,element) method that adds an element at a given index. Just like how we remove elements at a given index, we need to keep 
+track of the currentIndex as we traverse the linked list. When the currentIndex matches the given index, we would need to reassign the previous node's 
+next property to reference the new added node. And the new node should reference the next node in the currentIndex. Returning to the conga line example, 
+a new person wants to join the line, but he wants to join in the middle. You are in the middle of the line, so you take your hands off of the person 
+ahead of you. The new person walks over and puts his hands on the person you once had hands on, and you now have your hands on the new person.
+
+Create an addAt(index,element) method that adds an element at a given index. Return false if an element could not be added. Note: Remember to check if 
+the given index is a negative or is longer than the length of the linked list.
 */
 
 function LinkedList() {
@@ -165,7 +177,7 @@ function LinkedList() {
         }
     
         let currentIndex = 0;
-        if(length === 1 && index === 0){
+        if(length === 1 && index === currentIndex){
           const elementRemoved = head.element;
           head = null;
           length--;
@@ -183,9 +195,37 @@ function LinkedList() {
             length--;
             return elementRemoved;
           }
-          currentIndex++;
           previous = current;
           current = current.next;
         }
+    }
+
+    this.addAt = function(index, element){
+      if(index >= length || index < 0){
+        return false;
+      }
+  
+      const node = new Node(element);
+      const currentIndex = 0;
+      const current = head;
+  
+      if(currentIndex === index){
+        node.next = current;
+        head = node;
+        length++;
+      } else {
+        currentIndex++;
+        current = head.next;
+        while(current){
+          if(index === currentIndex){
+            node.next = current;
+            current = node.next;
+            length++;
+          } else {
+            currentIndex++;
+            current = current.next;
+          }
+        }
+      }
     }
 }
