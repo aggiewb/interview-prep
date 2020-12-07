@@ -7,16 +7,12 @@ What is the largest prime factor of the given number?
 
 function largestPrimeFactor(number) {
     let largestPrimeFactor = number;
-    while(largestPrimeFactor % 2 === 0){
-      largestPrimeFactor = largestPrimeFactor / 2;
-    }
-  
     if(largestPrimeFactor === 1 && number % 2 === 0){
       largestPrimeFactor = 2;
       return largestPrimeFactor;
     }
   
-    for(let i = 5; i < largestPrimeFactor; i++){
+    for(let i = 3; i < largestPrimeFactor; i+=2){
       if(largestPrimeFactor % i === 0){
         largestPrimeFactor = largestPrimeFactor / i;
       }
