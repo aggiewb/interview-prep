@@ -7,7 +7,7 @@ What is the largest prime factor of the given number?
 
 function largestPrimeFactor(number) {
     let largestPrimeFactor = number;
-    if(largestPrimeFactor === 1 && number % 2 === 0){
+    if(number % 2 === 0){
       largestPrimeFactor = 2;
       return largestPrimeFactor;
     }
