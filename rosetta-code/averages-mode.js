@@ -40,4 +40,4 @@ function mode(arr) {
     }
     
     return modeArr;
-  }
+}
