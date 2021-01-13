@@ -9,7 +9,6 @@ const reverse = function(x) {
         numArr.splice(0, 1);
     }
     
-    
     for(let i = 0; i < numArr.length / 2; i++){
         const temp = numArr[i];
         numArr[i] = numArr[lastIndex - i];
