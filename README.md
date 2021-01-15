@@ -1,5 +1,5 @@
 # interview-prep
-Repo to store solutions to freeCodeCamp's Coding Interview Prep.
+Repo to store solutions to freeCodeCamp's Coding Interview Prep and leetcode problems.
 
 ## [Introduction to the Coding Interview Prep Algorithms](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/)
 
