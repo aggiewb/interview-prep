@@ -17,4 +17,21 @@ const twoSum = function(nums, target){
             }
         }
     }
-}
+};
+
+//Hash Map
+const twoSum = function(nums, target){
+    const numsMap = new Map();
+    
+    for(let i = 0; i < nums.length; i++){
+        const currVal = nums[i];
+        const targetDiff = target - currVal;
+        const mapValue = numsMap.get(targetDiff);
+
+        if(mapValue !== undefined){
+            return [mapValue, i];
+        } else {
+            numsMap.set(currVal, i);
+        }
+    }
+};
