@@ -1,4 +1,4 @@
-package java_lang.easy;
+package java_lang.other_problems;
 
 /*
 Write a method that returns 'Fizz' for multiples of three and 'Buzz' for the multiples of five.

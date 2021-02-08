@@ -1,4 +1,4 @@
-package java_lang.easy;
+package java_lang.other_problems;
 
 /* Write a method that calculates the factorial of a given number.
 Factorial is the product of all positive integers less than or equal to n. 

@@ -1,4 +1,4 @@
-package java_lang.easy;
+package java_lang.other_problems;
 
 /*
 Given a number n, write a method that sums all multiples of three and five up to n (inclusive).

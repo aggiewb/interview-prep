@@ -1,4 +1,4 @@
-package java_lang.easy;
+package java_lang.other_problems;
 
 /*
 Write a method that sums two numbers. 

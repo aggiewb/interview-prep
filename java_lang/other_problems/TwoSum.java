@@ -1,4 +1,4 @@
-package java_lang.easy;
+package java_lang.other_problems;
 import java.util.*; 
 /*
 https://leetcode.com/problems/two-sum/submissions/
