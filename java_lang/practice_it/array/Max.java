@@ -1,3 +1,4 @@
+package java_lang.practice_it.array;
 
 /*
 https://practiceit.cs.washington.edu/problem/view/bjp5/chapter7/s10%2Dmax
