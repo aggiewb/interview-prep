@@ -1,4 +1,4 @@
-package java_lang.leetcode;
+package java_lang.leetcode.linked_list;
 
 /**
  * https://leetcode.com/problems/delete-node-in-a-linked-list/solution/

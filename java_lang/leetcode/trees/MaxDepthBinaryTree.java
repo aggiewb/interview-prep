@@ -1,4 +1,4 @@
-package java_lang.leetcode;
+package java_lang.leetcode.trees;
 
 /*
 https://leetcode.com/explore/interview/card/top-interview-questions-easy/94/trees/555/

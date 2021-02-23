@@ -1,4 +1,4 @@
-package java_lang.leetcode;
+package java_lang.leetcode.math;
 
 /*
 https://leetcode.com/problems/palindrome-number/

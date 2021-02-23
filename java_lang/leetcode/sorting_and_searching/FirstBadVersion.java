@@ -1,4 +1,4 @@
-package java_lang.leetcode;
+package java_lang.leetcode.sorting_and_searching;
 
 /*
 https://leetcode.com/problems/first-bad-version/

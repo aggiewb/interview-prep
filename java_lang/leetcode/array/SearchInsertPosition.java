@@ -1,4 +1,4 @@
-package java_lang.leetcode;
+package java_lang.leetcode.array;
 
 /*
 https://leetcode.com/problems/search-insert-position/

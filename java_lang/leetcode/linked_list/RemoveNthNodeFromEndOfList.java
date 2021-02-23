@@ -1,4 +1,4 @@
-package java_lang.leetcode;
+package java_lang.leetcode.linked_list;
 
 /**
  * https://leetcode.com/problems/remove-nth-node-from-end-of-list/solution/
