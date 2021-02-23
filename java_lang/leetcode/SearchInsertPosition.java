@@ -4,7 +4,7 @@ package java_lang.leetcode;
 https://leetcode.com/problems/search-insert-position/
 */ 
 
-public class SearcgInsertPosition {
+public class SearchInsertPosition {
     public int searchInsert(int[] nums, int target) {
         if(nums[0] >= target){
             return 0;
