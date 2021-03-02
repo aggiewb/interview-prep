@@ -42,5 +42,27 @@ public class LongestSubstringWithoutRepeatingChars {
         }
         return longestSubstringLength;
     }
-    
+
+    public int lengthOfLongestSubstringSW(String s) {
+        Set<Character> longestSubstringSet = new HashSet<>();
+        int stringLength = s.length();
+        int longestSubstringLength = 0;
+        int i = 0;
+        int j = 0;
+        
+        while(j < stringLength){
+            //if the set does not contain the current character
+            if(!longestSubstringSet.contains(s.charAt(j))){
+                //add that character to the set then increment j
+                longestSubstringSet.add(s.charAt(j++));
+                //set the return value to the max of set longestSubstringLength or the current set size
+                longestSubstringLength = Math.max(longestSubstringLength, longestSubstringSet.size());
+            //if the set does contain the character
+            } else {
+                //remove characters from the start of the s string until the character at j is not in the set
+                longestSubstringSet.remove(s.charAt(i++));
+            }
+        }
+        return longestSubstringLength;
+    }
 }
