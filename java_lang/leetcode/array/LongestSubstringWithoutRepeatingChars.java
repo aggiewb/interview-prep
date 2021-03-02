@@ -43,6 +43,7 @@ public class LongestSubstringWithoutRepeatingChars {
         return longestSubstringLength;
     }
 
+    /*Sliding Window*/ 
     public int lengthOfLongestSubstringSW(String s) {
         Set<Character> longestSubstringSet = new HashSet<>();
         int stringLength = s.length();
