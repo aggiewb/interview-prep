@@ -2,7 +2,14 @@ import java.util.*;
 
 public class InitializationGuide {
     public static void main(String[] args){
+        //Primitive Data Types: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+        //String: https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
+        //Math: https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
+        //Number: https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html 
+        //Character: https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html
+
         //Array
+        // https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html
         int size = 10;
         int[] nums1Array = new int[size];
         int[] nums2Array = {1, 2, 3};
@@ -12,6 +19,7 @@ public class InitializationGuide {
         String[][] multi2Dimension = {{"Milk", "Cream"}, {"Chicken", "Beef"}};
         
         //ArrayList
+        //https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
         ArrayList<String> wordArrayList = new ArrayList<>();
         ArrayList<Integer> numArrayList = new ArrayList<>();
         List<Character> charArrayList = Arrays.asList('a', 'b', 'c');
@@ -20,10 +28,13 @@ public class InitializationGuide {
         ArrayList<Integer> collection = new ArrayList<Integer>(strCollection);
 
         //LinkedList
+        //https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html
 
         //Set: HashSet and TreeSet flavors
+        //https://docs.oracle.com/javase/8/docs/api/java/util/Set.html
 
         //Map: HashMap and TreeMap flavors
+        //https://docs.oracle.com/javase/8/docs/api/java/util/Map.html
 
     }
     
