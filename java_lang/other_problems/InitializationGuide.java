@@ -15,9 +15,16 @@ public class InitializationGuide {
         ArrayList<String> wordArrayList = new ArrayList<>();
         ArrayList<Integer> numArrayList = new ArrayList<>();
         List<Character> charArrayList = Arrays.asList('a', 'b', 'c');
-        
+
         Collection<Integer> strCollection = new HashSet<>();
         ArrayList<Integer> collection = new ArrayList<Integer>(strCollection);
+
+        //LinkedList
+
+        //Set: HashSet and TreeSet flavors
+
+        //Map: HashMap and TreeMap flavors
+
     }
     
 }
