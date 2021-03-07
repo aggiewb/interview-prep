@@ -1,4 +1,6 @@
+package java_lang.other_problems;
 import java.util.*;
+@SuppressWarnings("unused");
 
 public class InitializationGuide {
     public static void main(String[] args){
@@ -51,7 +53,13 @@ public class InitializationGuide {
 
         //Map: HashMap and TreeMap flavors
         //https://docs.oracle.com/javase/8/docs/api/java/util/Map.html
+        Map<Character, String> example1HM = new HashMap<>();
+        Map<Character, String> example2HM = new HashMap<>(example1HM);
+        HashMap<Byte, Boolean> example3HM = new HashMap<>();
 
+        Map<Character, Integer> example1TM = new TreeMap<>();
+        Map<Character, Integer> example2TM = new TreeMap<>(example1TM);
+        TreeMap<Short, Long> example3TM = new TreeMap<>();
     }
     
 }
