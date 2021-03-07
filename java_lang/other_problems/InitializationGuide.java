@@ -30,15 +30,24 @@ public class InitializationGuide {
 
         //LinkedList
         //https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html
-        List<Integer> example1 = new LinkedList<>(Arrays.asList(1, 2));
-        List<Character> example2 = new LinkedList<>();
-        LinkedList<String> example3 = new LinkedList<>();
-        
+        List<Integer> exampleLL1 = new LinkedList<>(Arrays.asList(1, 2));
+        List<Character> exampleLL2 = new LinkedList<>();
+        LinkedList<String> exampleLL3 = new LinkedList<>();
+
         ArrayList<Float> floatArrayList = new ArrayList<>();
-        LinkedList<Float> example4 = new LinkedList<>(floatArrayList);
+        LinkedList<Float> exampleLL4 = new LinkedList<>(floatArrayList);
 
         //Set: HashSet and TreeSet flavors
         //https://docs.oracle.com/javase/8/docs/api/java/util/Set.html
+        Set<Integer> example1HS = new HashSet<>();
+        HashSet<Integer> example2HS = new HashSet<>();
+
+        Set<Integer> example1TS = new TreeSet<>();
+        TreeSet<Integer> example2TS = new TreeSet<>();
+        
+        ArrayList<String> strArrayList = new ArrayList<>();
+        Set<String> example3HS = new HashSet<>(strArrayList);
+        Set<String> example3TS = new TreeSet<>(strArrayList);
 
         //Map: HashMap and TreeMap flavors
         //https://docs.oracle.com/javase/8/docs/api/java/util/Map.html
