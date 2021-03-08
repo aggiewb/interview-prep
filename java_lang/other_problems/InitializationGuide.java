@@ -1,6 +1,6 @@
 package java_lang.other_problems;
 import java.util.*;
-@SuppressWarnings("unused");
+@SuppressWarnings("unused")
 
 public class InitializationGuide {
     public static void main(String[] args){
